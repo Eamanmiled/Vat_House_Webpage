@@ -1,6 +1,63 @@
 {% extends "app1/base.html" %}
-
-{% block title %}Home - My Django Site{% endblock %}
+{% load static %}
+{% block title %}Vat House Whiskeys{% endblock %}
 
 {% block content %}
+<h1>Whiskey</h1>
+<p>At The Vathouse, we pride ourselves in having Dublin&#8217;s finest selection of Irish Whiskeys. You can choose from our bar menu or alternatively why not try our expecially selected whiskey tasting trays which consist of 4 shots of 4 different whiskeys!</p>
+<p>We currently have four to choose from. Each tray gives you Nose, Tasting and Finish notes for each whiskey, guidance on how to get the most out of your whiskey tasting experience, and a great souvenir to take home.</p>
+
+
+<!--whisky bootstrap cards-->
+<div class="container py-5 bg-light">
+    <h2 class="text-center mb-4"><u>Whisky boards</u></h2>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/irishtray.jpg' %}" class="card-img-top" alt="irishtray">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Irish Tasting Tray</h5>
+                    <p class="card-text">The Irish Tasting Tray gives you a great selection of some fine Irish Whiskeys. 
+                        <br>A superb blended whiskey in Powers, Irelands only single grain whiskey, Ireland’s only peated 
+                        single malt, and our favourite Pure Pot Still whiskey.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/bushmilltray.jpg' %}" class="card-img-top" alt="bushmills tray">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bushmills tasting tray</h5>
+                    <p class="card-text">The Bushmills tasting tray sees you tasting probably one of the best 
+                        blended whiskeys in the world. It will also help you appreciate the subtle but amazing 
+                        differences achieved both through the blending and maturing processes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/internationaltray.jpg' %}" class="card-img-top" alt="International tray">
+                <div class="card-body text-center">
+                    <h5 class="card-title">International Tasting Tray</h5>
+                    <p class="card-text">The International tasting tray allows you to savour the differences between 
+                        a great Irish blended whiskey, an impressive Malt Scotch, a robust American Bourbon, and a 
+                        stylish Japanese Single Malt.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="{% static 'images/PremTray.jpg' %}" class="card-img-top" alt="Prem Tray">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Premium Tasting Tray</h5>
+                    <p class="card-text">What can we say, this is very special. This tray combines some of our all time 
+                        favourites, and they will become yours too!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Here’s just a small selection from our Whiskey List:</h1>
+
+
 {% endblock %}
