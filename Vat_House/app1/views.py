@@ -17,6 +17,3 @@ def location(request):
 
 def whisky(request):
     return render(request, 'app1/whisky.html')
-
-def food_menu(request):
-    return redirect('https://thetemplebarpub.com/wp-content/uploads/2024/02/Temple-Bar-Menu-2024.pdf')

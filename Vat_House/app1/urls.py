@@ -8,5 +8,4 @@ urlpatterns = [
     path('app1/location', views.location, name='location'),
     path('app1/whisky', views.whisky, name='whisky'),
     path('app1/entertainment', views.entertainment, name='entertainment'),
-    path('app1/food.html', views.food_menu, name='food_menu'),
 ]
