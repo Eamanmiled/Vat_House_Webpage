@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <a class="navbar-brand" href="#">
                 <img src="{% static 'images/vathouse_logo.png' %}" alt="VAT House Logo" style="height: 50px;">
             </a>
@@ -27,7 +27,7 @@
                         <a class="nav-link" href="{% url 'about' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'whisky' %}">Whisky</a>
+                        <a class="nav-link" href="{% url 'whisky' %}">Whiskey</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'food' %}">Food & Drink</a>

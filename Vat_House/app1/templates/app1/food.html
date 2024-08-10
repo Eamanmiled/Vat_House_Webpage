@@ -3,11 +3,38 @@
 {% block title %}Vat House Food & Drink{% endblock %}
 
 {% block content %}<!-- doesnt work fix later -->
-<div class="container py-5">
-    <h2 class="text-center mb-4"><u>Food & Drink</u></h2>
+<div class="container py-5" >
+    <h2 class="text-center mb-4" style="padding-top: 70px;"><u>Food & Drink</u></h2>
     <h3 class="text-center mb-4">Serving delicious food & drink every day!<br>
         Open weekdays from 3 PM and Saturdays + Sundays from 1 PM.<br>
         Kitchen closes at 9 PM, or 10 PM on Fridays and Saturdays.</h3>
 </div>
-
+<div class="container mt-5">
+    <div class="row text-center">
+        <!-- First Box -->
+        <div class="col-md-4">
+            <a href="https://www.example1.com" target="_blank" class="box-link">
+                <div class="box">
+                    <img class="d-block w-100" src="{% static 'images/vat_house_bar_exterior.jpg' %}">
+                </div>
+            </a>
+        </div>
+        <!-- Second Box -->
+        <div class="col-md-4">
+            <a href="https://www.example2.com" target="_blank" class="box-link">
+                <div class="box bg-white border rounded p-4">
+                    <img class="d-block w-100" src="{% static 'images/vat_house_bar_exterior.jpg' %}">
+                </div>
+            </a>
+        </div>
+        <!-- Third Box -->
+        <div class="col-md-4">
+            <a href="https://www.example3.com" target="_blank" class="box-link">
+                <div class="box bg-white border rounded p-4">
+                    <img class="d-block w-100" src="{% static 'images/vat_house_bar_exterior.jpg' %}">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 {% endblock %}
